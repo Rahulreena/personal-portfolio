@@ -1,0 +1,150 @@
+
+*{
+    text-decoration: none;
+}
+
+
+
+#Home{
+    height: 100vh;
+    min-height: 500px;
+    background-color: black;
+background-image: url(../../assets/finaldp1.png) ;
+background-repeat: no-repeat;
+
+    background-size: contain;
+  
+  
+    
+
+}
+
+
+#Home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#Home .content{
+   width: 100%;
+   color: white;
+}
+
+#Home .content h1{
+   font-size: 60px;
+   white-space: nowrap;
+   margin-bottom: 60px;
+}
+
+#Home .content h1::after{
+    color: red;
+   content: " Rahul";
+   animation: textanim 10s linear infinite;
+}
+
+@keyframes textanim{
+   25%{
+       content: " A Developer";
+   }
+   50%{
+       content: " A Designer";
+
+   }
+ 
+}
+
+.sm a{
+   color: white;
+   font-size: 22px;
+   margin: 0 10px;
+   transition: .2s linear;
+
+
+}
+.sm a:hover{
+   color: rgb(233, 24, 24);
+
+}
+#Home .buttons{
+   margin-top: 60px;
+
+}
+
+#Home .buttons a{
+   display: inline-block;
+   margin: 15px 30px;
+   color: rgb(233, 24, 24);
+   font-size: 15px;
+   font-weight: 500;
+   width: 180px;
+   border: 1px solid rgb(233, 24, 24);
+   padding: 14px 0;
+   border-radius: 6px;
+   transition: 2.s linear;
+
+
+}
+
+#Home .buttons a:hover,
+#Home .buttons a:nth-child(2)
+{
+   background-color: rgb(233, 24, 24);
+   color: white;
+}
+
+section{
+   padding: 100px 0;
+   background-color: white;
+
+}
+
+.section-title{
+   text-align: center;
+   margin-bottom: 80px;
+   position: relative;
+   font-size: 26;
+   padding-bottom: 26px;
+   color: black;
+
+}
+
+.section-title::before{
+   content: "";
+   position: absolute;
+   width: 80px;
+   height: 3px;
+   background-color: black;
+   bottom: 0;
+   left: calc(50% - 40px);
+
+
+}
+
+.section-title::after{
+   content: "";
+   position: absolute;
+   width: 16px;
+   height: 10px;
+   background-color: rgb(233, 24, 24);
+   border: 4px solid #f1f1f1;
+   left: calc(50% - 12px);
+   bottom: -7px;
+}
+
+@media (max-width:670px){
+    #Home .content h1{
+        font-size: 37px;
+        font-weight: 800;
+        color: #f6f0f0;
+    }
+
+    #Home {
+      background-size: 30%;
+   background-position: center top;
+
+   }
+
+}

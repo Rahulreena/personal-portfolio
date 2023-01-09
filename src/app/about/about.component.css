@@ -1,0 +1,72 @@
+.about{
+    width: 100%;
+    padding: 100px 0;
+    background-color: black;
+}
+
+.about img{
+    height: auto;
+    width: 500px;
+    
+}
+
+.about-text{
+    width: 550px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+font-weight: 600;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 35px;
+
+text-transform: capitalize;
+}
+
+span{
+    color: red;
+}
+
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px ;
+    margin-bottom: 45px;
+}
+
+button{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 35px;
+    transition: .4s;
+
+
+}
+
+button:hover{
+    background-color: transparent;
+
+border: 2px solid red;
+}
