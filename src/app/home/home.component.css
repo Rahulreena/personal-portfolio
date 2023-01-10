@@ -9,16 +9,10 @@
     height: 100vh;
     min-height: 500px;
     background-color: black;
-background-image: url(../../assets/finaldp1.png) ;
-background-repeat: no-repeat;
-
+    background-image: url(../../assets/finaldp2.png) ;
+    background-repeat: no-repeat;
     background-size: contain;
-  
-  
-    
-
 }
-
 
 #Home .inner-width{
     display: flex;
@@ -141,10 +135,10 @@ section{
         color: #f6f0f0;
     }
 
-    #Home {
-      background-size: 30%;
-   background-position: center top;
 
-   }
 
+}
+
+
+@media(max-width:1024px){
 }

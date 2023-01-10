@@ -1,0 +1,126 @@
+
+*{
+    
+}
+
+
+.service{
+    background: black;
+    width: 100%;
+    padding: 100px 0px;
+overflow: hidden;
+}
+
+.title h2{
+    color: white;
+    font-size: 75px;
+    font-weight: 600;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #464343;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+   
+    
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+text-align: center;
+margin: 25px 0px;
+color: #f9004d;
+}
+
+h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.pra p{
+    color: rgb(224, 213, 213);
+    font-size: 14px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+ .card .button{
+  background-color: #ff0c0c;
+text-decoration: none;
+color: white;
+    padding: 9px 22px;
+    border-radius: 35px;
+    transition: .4s;
+
+
+}
+
+.card .button:hover{
+    background-color: transparent;
+
+    border: 2px solid red;
+}
+
+
+@media  screen and (max-width: 1024px){
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+    }
+    .card{
+        width:60%;
+    }
+.title h2{
+    font-size: 60px;
+    display: flex;
+    margin-left: 30%;
+
+}    
+
+}
+@media  screen and (max-width: 670px){
+    .box{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+        overflow: hidden;
+        margin-left: 6%;
+    }
+    .card{
+        width: 80%;
+    }
+
+
+    .title h2{
+        color: white;
+        font-size: 50px;
+        font-weight: 600;
+       text-align: left;
+       margin-left:10% ;
+        
+    }
+
+}
+    
