@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +9,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+contactForm: FormGroup
+
+isSubmit=true
+submitMessage='';
+  constructor(private form:FormBuilder) { }
 
   ngOnInit(): void {
+this.contactForm= this.form.group({
+  Fullname:[null,Validators.required],
+  Email:[null,Validators.required],
+  Subject:[null,Validators.required],
+  Textarea:[null,Validators.required]
+})
+  }
+
+  submitData(value:any){
+    console.log(value)
+    this.isSubmit=true;
+    this.submitMessage='Submitted Successfully'
+    setTimeout(()=>{
+this.isSubmit=false
+    },8000)
   }
 
 }

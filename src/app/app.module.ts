@@ -11,6 +11,11 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactService } from './contact.service';
+
+import { AngularFireModule } from '@angular/fire'
 
 @NgModule({
   declarations: [
@@ -27,9 +32,16 @@ import { FooterComponent } from './footer/footer.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    AngularFireModule
+   
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

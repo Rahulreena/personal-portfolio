@@ -1,4 +1,4 @@
-.contact-me{
+/* .contact-me{
     width: 100%;
     height: 290px;
     background: #191919;
@@ -44,4 +44,135 @@
         padding: 25px;
     }
 }
+ */
 
+
+ section{
+    padding: 25px 10%;
+ }
+
+ .contact{
+    background: rgb(0, 0, 0);
+    height: 100%;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 10rem;
+    overflow: hidden;
+ }
+
+.contact-img img{
+    max-width: 100%;
+    width: 350px;
+    border-radius: 0px 50px 100px 1000px ;
+  
+ }
+
+ .contact-form h1{
+    font-size: 80px;
+    color: white;
+    margin-bottom: 35px ;
+    white-space:nowrap;
+ }
+
+ span{
+    color: red;
+ }
+
+ .contact-form p{
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+ }
+
+ .contact form{
+    position: relative;
+ }
+
+ .contact-form form input, form textarea{
+
+width: 100%;
+padding: 17px;
+border: none;
+outline: none;
+background: #191919;
+color: white;
+font-size: 15px;
+margin-bottom: 0.7rem;
+border-radius: 10px;
+ }
+
+ .contact-form textarea{
+    resize: none;
+    height: 200px;
+ }
+
+ .contact-form form button{
+    display: inline-block;
+    background: red;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    transition: ease .20s;
+    cursor: pointer;
+    align-items: center;
+    margin: 10px;
+ }
+
+ .contact-form form button:hover{
+    border: 2px solid #f90000;
+background: transparent;
+transform: scale(1.1);
+ }
+
+ @media(max-width:1570px){
+    section{
+        padding: 80px 3%;
+        transition: 0.2s;
+    }
+
+    .contact-form h1{
+        font-size: 60px;
+    }
+
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+ }
+
+ @media(max-width:1090px){
+    .contact{
+        grid-gap:2rem;
+        transition: 0.3s;
+    }
+ }
+
+ @media(max-width:1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form{
+        order: 2;
+    }
+
+    .contact-img img{
+        max-width: 100%;
+        width: 60%;
+      float:right;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    
+ }
