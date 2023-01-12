@@ -4,11 +4,34 @@
 }
 
 
+.drop{
+   color: white;
+  
+
+   background-color: rgb(255, 0, 0);
+   width: 3%;
+   text-align: center;
+   align-items: center;
+   padding: 10px 0px;
+   position: fixed;
+   z-index: 15;
+   left: 94%;
+   right: 80%;
+   transform: translate(70%, 50%);
+   border-radius: 45%;
+   text-decoration: none;
+ 
+}
+
+.drop a i{
+   color: white;
+}
+
 
 #Home{
     height: 100vh;
     min-height: 500px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     background-image: url(../../assets/finaldp2.png) ;
     background-repeat: no-repeat;
     background-size: contain;
@@ -25,6 +48,15 @@
 #Home .content{
    width: 100%;
    color: white;
+   opacity: 0;
+   animation: 1s text-ani 1s forwards;
+}
+@keyframes text-ani{
+   100%{
+      opacity: 1;
+      margin: 0;
+   }
+
 }
 
 #Home .content h1{
@@ -133,6 +165,17 @@ section{
         font-size: 37px;
         font-weight: 800;
         color: #f6f0f0;
+    }
+
+    .drop{
+      width: 100%;
+  
+    }
+
+    .drop a i{
+      width: 100%;
+      position: absolute;
+      left: 50%;
     }
 
 

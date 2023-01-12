@@ -3,20 +3,21 @@
     <a class="button-two" href="#">Hire Me</a>
 </div> -->
 
-<section class="contact">
-    <div class="contact-form">
+<section class="contact" >
+    <div class="contact-form" id="contatcus">
 <h1>Contact <span>Us</span> </h1>
 <p>Iam available for freelance wok. Connect with me via phone:44+4+47+15 or email: rahu@test.com</p>
 
 <form [formGroup]="contactForm"> 
-    <p *ngIf="isSubmit">{{ submitMessage}}</p>
+   
     <input type="text" placeholder="Your Name" formControlName="Fullname" required>
     <input type="email" placeholder="E-mail" formControlName="Email" id="" required>
     <input type="" placeholder="Write a Subject" formControlName="Subject" required>
     <textarea name="" id="" cols="30" rows="10" formControlName="Textarea"  placeholder="Your Message">
 
     </textarea>
-<button type="submit" (click)="submitData(contactForm.value)" >Submit</button>
+<button type="submit" (click)="submitData(contactForm.value)" [disabled]="!contactForm.valid" >Send Message</button>
+<p *ngIf="isSubmit">{{ submitMessage}}</p>
 
 </form>
     </div>

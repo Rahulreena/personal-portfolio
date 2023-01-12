@@ -15,7 +15,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactService } from './contact.service';
 
-import { AngularFireModule } from '@angular/fire'
 
 @NgModule({
   declarations: [
@@ -36,7 +35,7 @@ import { AngularFireModule } from '@angular/fire'
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    AngularFireModule
+   
    
   ],
   providers: [

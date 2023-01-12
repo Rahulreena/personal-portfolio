@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from '../contact.service';
 
 
 @Component({
@@ -13,7 +14,7 @@ contactForm: FormGroup
 
 isSubmit=true
 submitMessage='';
-  constructor(private form:FormBuilder) { }
+  constructor(private form:FormBuilder, private contact:ContactService) { }
 
   ngOnInit(): void {
 this.contactForm= this.form.group({
@@ -24,8 +25,20 @@ this.contactForm= this.form.group({
 })
   }
 
-  submitData(value:any){
-    console.log(value)
+  submitData(contactForm: any){
+
+    this.contact.PostMessage(contactForm)
+    .subscribe(response =>{
+      location.href ='https://mailthis.to/confirm'
+      console.log(response);
+      
+    },error =>{
+      console.warn(error.responseText)
+      console.log({error})
+    })
+
+
+    console.log(contactForm)
     this.isSubmit=true;
     this.submitMessage='Submitted Successfully'
     setTimeout(()=>{
