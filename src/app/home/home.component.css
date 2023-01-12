@@ -48,16 +48,16 @@
 #Home .content{
    width: 100%;
    color: white;
-   opacity: 0;
-   animation: 1s text-ani 1s forwards;
+  
+   /* animation: 1s text-ani 1s forwards; */
 }
-@keyframes text-ani{
+/* @keyframes text-ani{
    100%{
       opacity: 1;
       margin: 0;
-   }
+   } */
 
-}
+
 
 #Home .content h1{
    font-size: 60px;
