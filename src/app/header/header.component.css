@@ -7,7 +7,6 @@ nav{
    
   display: flex;
   justify-content:space-between;
-  
  
 
 
@@ -83,7 +82,7 @@ nav ul:hover li a:not(:hover){
 
 .checkbtn{
   font-size: 30px;
-  color: rgb(248, 246, 246);
+  color: rgb(219, 31, 31);
   float: right;
   line-height: 60px;
   margin-right: 40px;
@@ -130,7 +129,6 @@ button{
   .checkbtn{
    display: block;
   
-   
 
     padding: 0 10px;
   }

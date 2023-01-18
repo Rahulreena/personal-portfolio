@@ -147,8 +147,8 @@ button {
 
    @media (max-width:670px){
     footer p:nth-child(2){
-        font-size: 15px;
-        text-align: center;
+        font-size: 13px;
+      
         line-height: 28px;
     }
    }
