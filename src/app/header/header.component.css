@@ -7,6 +7,7 @@ nav{
    
   display: flex;
   justify-content:space-between;
+  
  
 
 
@@ -129,6 +130,7 @@ button{
   .checkbtn{
    display: block;
   
+   
 
     padding: 0 10px;
   }
